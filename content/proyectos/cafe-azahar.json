@@ -1,0 +1,27 @@
+{
+  "titulo": "Café Azahar",
+  "tipo": "Local",
+  "ubicacion": "Jerez de la Frontera",
+  "anio": "2024",
+  "superficie": "70 m²",
+  "destacado": true,
+  "orden": 4,
+  "resumen": "Cafetería de barrio en un bajo comercial. Una barra larga de azulejo, bancos corridos y mucha planta.",
+  "cuerpo": "El local tenía una sola fachada y mucho fondo. Llevamos la barra hasta el final para que el recorrido invitara a entrar y colocamos un lucernario sobre la zona de mesas.\n\nEl azulejo de la barra lo esmaltó a mano un taller de Triana con un verde que cambia según la hora.",
+  "portada": "/uploads/cafe-azahar-1.jpg",
+  "galeria": [
+    {
+      "imagen": "/uploads/cafe-azahar-1.jpg",
+      "pie": "Zona de mesas bajo el lucernario."
+    },
+    {
+      "imagen": "/uploads/cafe-azahar-2.jpg",
+      "pie": "Banco corrido tapizado."
+    },
+    {
+      "imagen": "/uploads/cafe-azahar-3.jpg",
+      "pie": "La barra de azulejo verde."
+    }
+  ],
+  "fotografia": "Ilustración de muestra"
+}

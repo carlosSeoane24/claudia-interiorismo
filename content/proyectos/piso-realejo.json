@@ -1,0 +1,27 @@
+{
+  "titulo": "Piso en el Realejo",
+  "tipo": "Vivienda",
+  "ubicacion": "Granada",
+  "anio": "2024",
+  "superficie": "120 m²",
+  "destacado": false,
+  "orden": 5,
+  "resumen": "Reforma integral de un piso de los años sesenta. Se derribaron los pasillos y se recuperó el suelo hidráulico original.",
+  "cuerpo": "Bajo tres capas de terrazo apareció el hidráulico original, con una greca verde y ocre. Lo restauramos pieza a pieza y a partir de ahí salió toda la paleta de la casa.",
+  "portada": "/uploads/piso-realejo-1.jpg",
+  "galeria": [
+    {
+      "imagen": "/uploads/piso-realejo-1.jpg",
+      "pie": "Salón con el suelo hidráulico restaurado."
+    },
+    {
+      "imagen": "/uploads/piso-realejo-2.jpg",
+      "pie": "Dormitorio de invitados."
+    },
+    {
+      "imagen": "/uploads/piso-realejo-3.jpg",
+      "pie": "Baño en tonos oliva."
+    }
+  ],
+  "fotografia": "Ilustración de muestra"
+}

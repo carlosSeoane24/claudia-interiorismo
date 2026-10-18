@@ -1,0 +1,116 @@
+# Configuración del panel de edición (Decap CMS).
+# Antes de publicar, cambia las DOS líneas marcadas con CAMBIAR.
+backend:
+  name: github
+  repo: USUARIO/NOMBRE-DEL-REPO          # CAMBIAR: tu usuario de GitHub / nombre del repositorio
+  branch: main
+  base_url: https://inescalvo.pages.dev  # CAMBIAR: la dirección final de la web
+  auth_endpoint: api/auth
+  commit_messages:
+    create: 'Nuevo {{collection}}: {{slug}}'
+    update: 'Actualiza {{collection}}: {{slug}}'
+    delete: 'Borra {{collection}}: {{slug}}'
+    uploadMedia: 'Sube imagen {{path}}'
+    deleteMedia: 'Borra imagen {{path}}'
+
+locale: es
+site_url: https://inescalvo.pages.dev
+display_url: https://inescalvo.pages.dev
+media_folder: public/uploads
+public_folder: /uploads
+
+collections:
+  - name: proyectos
+    label: Proyectos
+    label_singular: Proyecto
+    description: Cada proyecto tiene su propia página. Los marcados como destacados salen en la portada; el primero según el orden ocupa el arco grande.
+    folder: content/proyectos
+    format: json
+    extension: json
+    create: true
+    delete: true
+    slug: '{{slug}}'
+    identifier_field: titulo
+    summary: '{{titulo}} ({{anio}})'
+    sortable_fields: ['orden', 'anio', 'titulo']
+    fields:
+      - { label: Título, name: titulo, widget: string }
+      - { label: Tipo, name: tipo, widget: select, options: ['Vivienda', 'Local', 'Hostelería', 'Oficina', 'Reforma parcial'], default: 'Vivienda' }
+      - { label: Lugar, name: ubicacion, widget: string, hint: 'Ejemplo: Vejer de la Frontera, Cádiz' }
+      - { label: Año, name: anio, widget: string }
+      - { label: Superficie, name: superficie, widget: string, required: false, hint: 'Ejemplo: 120 m²' }
+      - { label: Destacado en portada, name: destacado, widget: boolean, default: false }
+      - { label: Orden, name: orden, widget: number, value_type: int, default: 10, hint: 'Los números bajos salen antes. El 1 es el proyecto principal de la portada.' }
+      - { label: Foto de portada, name: portada, widget: image, hint: 'Mejor vertical u horizontal grande, al menos 1600 px de ancho.' }
+      - { label: Resumen, name: resumen, widget: text, hint: 'Una o dos frases. Sale bajo el título y en Google.' }
+      - { label: Texto del proyecto, name: cuerpo, widget: markdown, buttons: ['bold', 'italic', 'link', 'heading-two', 'bulleted-list'], editor_components: [] }
+      - label: Galería
+        name: galeria
+        widget: list
+        required: false
+        summary: '{{fields.pie}}'
+        fields:
+          - { label: Imagen, name: imagen, widget: image }
+          - { label: Pie de foto, name: pie, widget: string, required: false }
+      - { label: Fotografía (crédito), name: fotografia, widget: string, required: false }
+
+  - name: noticias
+    label: Noticias
+    label_singular: Noticia
+    folder: content/noticias
+    format: json
+    extension: json
+    create: true
+    delete: true
+    slug: '{{year}}-{{month}}-{{slug}}'
+    identifier_field: titulo
+    summary: '{{fecha}} · {{titulo}}'
+    sortable_fields: ['fecha', 'titulo']
+    fields:
+      - { label: Título, name: titulo, widget: string }
+      - { label: Fecha, name: fecha, widget: datetime, format: 'YYYY-MM-DD', date_format: 'DD/MM/YYYY', time_format: false, picker_utc: true }
+      - { label: Imagen, name: imagen, widget: image, required: false }
+      - { label: Medio o fuente, name: medio, widget: string, required: false, hint: 'Si es una publicación: nombre de la revista o periódico.' }
+      - { label: Enlace externo, name: enlace, widget: string, required: false, hint: 'Dirección del artículo original, si lo hay.' }
+      - { label: Resumen, name: resumen, widget: text }
+      - { label: Texto, name: cuerpo, widget: markdown, buttons: ['bold', 'italic', 'link', 'bulleted-list'], editor_components: [] }
+
+  - name: estudio
+    label: Sobre mí y ajustes
+    files:
+      - name: perfil
+        label: Sobre mí y currículum
+        file: content/perfil.json
+        format: json
+        fields:
+          - { label: Frase principal, name: titular, widget: string }
+          - { label: Retrato, name: retrato, widget: image }
+          - { label: Biografía, name: bio, widget: markdown, buttons: ['bold', 'italic', 'link'], editor_components: [], hint: 'El primer párrafo aparece también en la portada.' }
+          - { label: Currículum en PDF, name: cv_pdf, widget: file, required: false }
+          - label: Formación
+            name: formacion
+            widget: list
+            summary: '{{fields.anio}}: {{fields.titulo}}'
+            fields: &cvitem
+              - { label: Año o periodo, name: anio, widget: string }
+              - { label: Título, name: titulo, widget: string }
+              - { label: Lugar o detalle, name: lugar, widget: string, required: false }
+          - { label: Experiencia, name: experiencia, widget: list, summary: '{{fields.anio}}: {{fields.titulo}}', fields: *cvitem }
+          - { label: Reconocimientos, name: reconocimientos, widget: list, required: false, summary: '{{fields.anio}}: {{fields.titulo}}', fields: *cvitem }
+          - { label: Publicaciones, name: publicaciones, widget: list, required: false, summary: '{{fields.anio}}: {{fields.titulo}}', fields: *cvitem }
+      - name: ajustes
+        label: Datos de contacto y portada
+        file: content/ajustes.json
+        format: json
+        fields:
+          - { label: Nombre, name: nombre, widget: string }
+          - { label: Oficio, name: subtitulo, widget: string }
+          - { label: Frase de portada, name: lema, widget: string }
+          - { label: Texto de presentación, name: intro, widget: text }
+          - { label: Correo, name: email, widget: string }
+          - { label: Teléfono, name: telefono, widget: string }
+          - { label: Usuario de Instagram, name: instagram, widget: string, required: false, hint: 'Sin la @' }
+          - { label: Ciudad del estudio, name: ciudad, widget: string }
+          - { label: Zona de trabajo, name: zona, widget: string }
+          - { label: Dirección web, name: url, widget: string }
+          - { label: Descripción para Google, name: descripcion_seo, widget: text }

@@ -1,0 +1,31 @@
+{
+  "titulo": "Casa de los Limoneros",
+  "tipo": "Vivienda",
+  "ubicacion": "Vejer de la Frontera, Cádiz",
+  "anio": "2025",
+  "superficie": "210 m²",
+  "destacado": true,
+  "orden": 1,
+  "resumen": "Rehabilitación de una casa de patio del siglo XIX. Recuperamos los techos de vigas y abrimos la cocina al limonero que da nombre a la casa.",
+  "cuerpo": "La casa llevaba quince años cerrada. Tenía humedades, tabiques que partían el patio en dos y un falso techo que escondía vigas de madera en muy buen estado.\n\nLo primero fue devolver el patio a su tamaño original. Desde ahí, cada estancia se organiza según la luz que recibe: la cocina y el comedor miran al limonero por la mañana, los dormitorios quedan en la crujía más fresca.\n\n## Materiales\n\nCal en paredes, barro cocido de La Rambla en suelos y una carpintería de pino tratado con aceite que hizo un taller de Medina Sidonia. El zócalo añil del patio es el mismo que tenía la casa en los años cincuenta, según las fotos que nos dejó la familia.",
+  "portada": "/uploads/casa-de-los-limoneros-1.jpg",
+  "galeria": [
+    {
+      "imagen": "/uploads/casa-de-los-limoneros-1.jpg",
+      "pie": "El salón, con las vigas recuperadas y luz de mañana."
+    },
+    {
+      "imagen": "/uploads/casa-de-los-limoneros-2.jpg",
+      "pie": "Cocina abierta al patio."
+    },
+    {
+      "imagen": "/uploads/casa-de-los-limoneros-3.jpg",
+      "pie": "Dormitorio principal en la crujía norte."
+    },
+    {
+      "imagen": "/uploads/casa-de-los-limoneros-4.jpg",
+      "pie": "Baño con alicatado artesanal."
+    }
+  ],
+  "fotografia": "Ilustración de muestra"
+}

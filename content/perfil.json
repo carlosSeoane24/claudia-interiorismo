@@ -1,0 +1,59 @@
+{
+  "titular": "Me formé como arquitecta técnica y acabé dentro de las casas.",
+  "retrato": "/uploads/retrato.jpg",
+  "bio": "Crecí en una casa de patio en Cádiz, entre paredes encaladas que había que repintar cada primavera. De ahí me viene la manía de mirar cómo entra el sol antes de decidir nada.\n\nDespués de seis años en un estudio de arquitectura en Madrid volví al sur en 2018 para abrir mi propio estudio. Hoy hago entre ocho y diez proyectos al año, casi todos viviendas, y algún local pequeño cuando la historia merece la pena.\n\nMe gusta trabajar con artesanos de aquí: carpinteros de Ubrique, ceramistas de La Rambla, herreros que todavía forjan a mano. Prefiero restaurar a sustituir y reutilizar a comprar, siempre que se pueda.",
+  "cv_pdf": "",
+  "formacion": [
+    {
+      "anio": "2012",
+      "titulo": "Máster en Diseño de Interiores",
+      "lugar": "Escuela de Arte de Madrid"
+    },
+    {
+      "anio": "2010",
+      "titulo": "Grado en Arquitectura Técnica",
+      "lugar": "Universidad de Sevilla"
+    }
+  ],
+  "experiencia": [
+    {
+      "anio": "2018 – hoy",
+      "titulo": "Estudio propio",
+      "lugar": "Cádiz"
+    },
+    {
+      "anio": "2014 – 2018",
+      "titulo": "Interiorista senior",
+      "lugar": "Estudio Lanza Arquitectura, Madrid"
+    },
+    {
+      "anio": "2012 – 2014",
+      "titulo": "Proyectista",
+      "lugar": "Taller de Rehabilitación Urbana, Madrid"
+    }
+  ],
+  "reconocimientos": [
+    {
+      "anio": "2025",
+      "titulo": "Finalista, Premios de Interiorismo del Sur",
+      "lugar": "Categoría vivienda, por Casa de los Limoneros"
+    },
+    {
+      "anio": "2023",
+      "titulo": "Mención, Bienal de Rehabilitación de Andalucía",
+      "lugar": "Por Cortijo La Vega"
+    }
+  ],
+  "publicaciones": [
+    {
+      "anio": "2026",
+      "titulo": "Reportaje Casa de los Limoneros",
+      "lugar": "Revista Habitar, número 84"
+    },
+    {
+      "anio": "2024",
+      "titulo": "Entrevista: el interiorismo que mira al clima",
+      "lugar": "Diario de la Bahía"
+    }
+  ]
+}

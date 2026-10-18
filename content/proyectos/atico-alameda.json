@@ -1,0 +1,27 @@
+{
+  "titulo": "Ático en la Alameda",
+  "tipo": "Vivienda",
+  "ubicacion": "Málaga",
+  "anio": "2025",
+  "superficie": "95 m²",
+  "destacado": true,
+  "orden": 2,
+  "resumen": "Un ático pequeño para una pareja que trabaja desde casa. Muebles a medida que esconden el despacho al terminar la jornada.",
+  "cuerpo": "El encargo era sencillo de enunciar y difícil de resolver: dos personas teletrabajando en 95 metros sin que la casa pareciera una oficina.\n\nDiseñamos un frente de armarios de suelo a techo que contiene dos escritorios plegables, archivo y una impresora. A las seis de la tarde se cierran las puertas y el salón vuelve a ser salón.\n\nLa terraza se protegió con un toldo de lona cruda y celosías de madera para poder usarla también en agosto.",
+  "portada": "/uploads/atico-alameda-1.jpg",
+  "galeria": [
+    {
+      "imagen": "/uploads/atico-alameda-1.jpg",
+      "pie": "Salón con el frente de armarios cerrado."
+    },
+    {
+      "imagen": "/uploads/atico-alameda-2.jpg",
+      "pie": "Dormitorio con cabecero tapizado en lino."
+    },
+    {
+      "imagen": "/uploads/atico-alameda-3.jpg",
+      "pie": "Cocina en línea con isla azul."
+    }
+  ],
+  "fotografia": "Ilustración de muestra"
+}

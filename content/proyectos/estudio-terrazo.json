@@ -1,0 +1,27 @@
+{
+  "titulo": "Taller de cerámica Terrazo",
+  "tipo": "Local",
+  "ubicacion": "Cádiz",
+  "anio": "2023",
+  "superficie": "85 m²",
+  "destacado": false,
+  "orden": 6,
+  "resumen": "Espacio de trabajo y tienda para una ceramista. Estanterías de obra y una gran mesa de amasado en el centro.",
+  "cuerpo": "La clienta necesitaba trabajar, enseñar y vender en el mismo sitio. Separamos los usos con alturas en lugar de tabiques: la tienda en la entrada, el taller detrás, el horno al fondo con ventilación propia.",
+  "portada": "/uploads/estudio-terrazo-1.jpg",
+  "galeria": [
+    {
+      "imagen": "/uploads/estudio-terrazo-1.jpg",
+      "pie": "La tienda en la entrada."
+    },
+    {
+      "imagen": "/uploads/estudio-terrazo-2.jpg",
+      "pie": "Zona de descanso del taller."
+    },
+    {
+      "imagen": "/uploads/estudio-terrazo-3.jpg",
+      "pie": "Aseo con lavadero de barro."
+    }
+  ],
+  "fotografia": "Ilustración de muestra"
+}

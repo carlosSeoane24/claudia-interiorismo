@@ -1,0 +1,31 @@
+{
+  "titulo": "Cortijo La Vega",
+  "tipo": "Vivienda",
+  "ubicacion": "Vega de Granada",
+  "anio": "2023",
+  "superficie": "340 m²",
+  "destacado": true,
+  "orden": 3,
+  "resumen": "Conversión de un antiguo secadero de tabaco en vivienda familiar, manteniendo la estructura de ladrillo y la escala de la nave.",
+  "cuerpo": "Los secaderos de la Vega son edificios altos, ventilados y de una austeridad preciosa. Queríamos que siguiera leyéndose como lo que fue.\n\nLa vivienda se resuelve con piezas de madera que se insertan dentro de la nave sin tocar los muros. Entre esas piezas quedan espacios de doble altura donde se cocina, se come y se juntan los nietos los domingos.",
+  "portada": "/uploads/cortijo-la-vega-1.jpg",
+  "galeria": [
+    {
+      "imagen": "/uploads/cortijo-la-vega-1.jpg",
+      "pie": "La nave convertida en salón de doble altura."
+    },
+    {
+      "imagen": "/uploads/cortijo-la-vega-2.jpg",
+      "pie": "Cocina de obra con encimera de piedra local."
+    },
+    {
+      "imagen": "/uploads/cortijo-la-vega-3.jpg",
+      "pie": "Dormitorio dentro de una de las piezas de madera."
+    },
+    {
+      "imagen": "/uploads/cortijo-la-vega-4.jpg",
+      "pie": "Baño con lavabo de piedra."
+    }
+  ],
+  "fotografia": "Ilustración de muestra"
+}
